@@ -15,7 +15,7 @@ int main(){
 	
 	cout<<"Process attached at "<<shared_memory<<endl;
 	
-	cin>>buff;
+	cin.getline(buff,100);
 	strcpy(static_cast<char*>(shared_memory), buff);
 
 	cout<<"You wrote: "<<(char *)shared_memory<<endl;
